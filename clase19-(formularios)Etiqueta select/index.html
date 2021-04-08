@@ -1,0 +1,69 @@
+<!--                *ETIQUETA SELECT*
+
+    hacer formularios con esta etiqueta es mala practica 
+                  
+        //////////////////////////////////////////////////
+
+                       *INPUT PARA LISTAS*
+    Utilizamos la etiqueta input con el atributo 
+    "list" y se pone el nombre de la lista que queremos poner: 
+
+    -años
+    -colores
+    -cursos
+    -deportes etc
+
+                         *ETIQUETA DATALIST*
+        
+    Es la etiqueta contenedora de todos los elemtos de la lista y se debe ligar al input poniendole un id para que se pueda mostrar su contenido 
+
+                        *ETIQUETA OPTION*
+                
+    En la etiqueta option se ponen todos los elementos de la lista y el nombre de los elementos de deben poner dentro del value y a la
+    hora de escribir una letra que coinsida automaticamente el navegador nos mostrara la opcion que nos convenga y asi no tendremos que hacer scrooll 
+            
+                
+-->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="Esta es la clase de las etiqueta autocomplete y require y hace parte de las etiquetas para crear formularios">
+    <title>Select</title>
+</head>
+<body>
+    <main>
+        <section>
+
+            <!-- <select name="cursos" id="">
+                <option value="Javascript">Javascript</option>---------------(Mala practica)
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+            </select> -->
+        
+        </section>
+
+        <!--*¿POR QUE ES MALA PRACTICA?
+        por que a la hora de tener que buscar entre 200 opciones vamos a tener que hacer scrooll y no podremos buscar-->
+        
+        <section>
+            <input list="cursos">
+            <datalist id="cursos">
+                <option value="JavaScript"></option>
+                <option value="HTML5"></option>
+                <option value="CSS3"></option>
+                
+
+            </datalist>
+        </section>
+    </main>
+</body>
